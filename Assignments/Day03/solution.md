@@ -4,6 +4,7 @@
 # Task 1: Read about the below topics
 
 * sed (stream editor)
+```
 SED command in UNIX is stands for stream editor and it can perform lot’s of function on file like, searching, find and replace,   insertion or deletion. Though most common use of SED command in UNIX is for substitution or for find and replace. By using SED you can edit files even without opening it, which is much quicker way to find and replace something in file, than first opening that file in VI Editor and then changing it.
 
 The basic usage is:
@@ -20,8 +21,10 @@ https://www.computerhope.com/unix/used.htm
 https://www.tutorialspoint.com/unix/unix-regular-expressions.htm
 https://www.tecmint.com/linux-sed-command-tips-tricks/
 https://www.linuxtechi.com/20-sed-command-examples-linux-users/
+```
 
 * awk
+```
 Awk is a programming language which allows easy manipulation of structured data and the generation of formatted reports. Awk stands for the names of its authors “Aho, Weinberger, and Kernighan”
 The Awk is mostly used for pattern scanning and processing. It searches one or more files to see if they contain lines that matches with the specified patterns and then perform associated actions.
 
@@ -37,15 +40,19 @@ Awk Blog:
 https://www.thegeekstuff.com/2010/01/awk-introduction-tutorial-7-awk-print-examples
 https://www.cse.iitb.ac.in/~br/courses/cs699-autumn2013/refs/awk-tutorial.html
 https://likegeeks.com/awk-command/
+```
 
 * shebang
+```
 The shebang is a special character sequence "#!" located at the top of many script file that specifies which program should be called to run the script. The shebang is always on the first line of the file, and is composed of the characters #! followed by the path to the interpreter program. 
  For example, in a shell script, the complete line may look similar to the following:
  #!/bin/bash
 
 The #! syntax used in scripts to indicate an interpreter for execution of script under UNIX / Linux operating systems.
+```
 
 * exit status
+```
 Each Linux command returns a status when it terminates normally or abnormally. You can use command exit status in the shell script to display an error message or take some sort of action.
 
 Exit codes are a number between 0 and 255, which is returned by any Unix command when it returns control to its parent process.
@@ -54,6 +61,7 @@ These can be used within a shell script to change the flow of execution dependin
 Success is traditionally represented with exit 0; failure is normally indicated with a non-zero exit-code.
 
 check exit status of command using echo $?
+```
 
 # Task 2:
 * Make a script and pass 5 command line arguments(arguments value should be interger)
