@@ -92,3 +92,39 @@ else
         echo -e "Addition of all 5 args is $sum"
 fi
 ```
+
+# Task 3:
+* Make a script and pass one command line arguments(use loop)
+
+    - print the table of command line argument if value is less 10
+    - print 5 times "INDIA" if value is greater than or equal to 10
+```
+#!/bin/bash
+
+#Make a script and pass one command line arguments(use loop)
+USAGE="USAGE: Please provide an integer argument"
+
+read -p "please input a number : " num
+
+if ! [[ "$num" =~ ^[0-9]+$ ]]
+    then
+        echo $USAGE
+        exit 1
+fi
+if [ $num -lt 10 ]
+        then
+                for i in {1..10}
+                do
+                echo "$num X $i = $(expr $num '*' $i)"
+
+                done
+
+elif [ $num -ge 10 ]
+        then
+
+        for i in {1..5}
+        do
+                echo "INDIA"
+        done
+fi
+```
