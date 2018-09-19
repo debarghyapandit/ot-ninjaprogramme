@@ -146,5 +146,52 @@ done
 
 read -p "Enter your name : " name
 print_name $name
+```
 
+* Make a excel sheet manually with 5 column, and print the 1st,3rd and 5th column
+```
+$ head -n 10 excel.csv
+OrderDate,Region,Rep,Item,Units
+1/6/16,East,Jones,Pencil,95
+1/23/16,Central,Kivell,Binder,50
+2/9/16,Central,Jardine,Pencil,36
+2/26/16,Central,Gill,Pen,27
+3/15/16,West,Sorvino,Pencil,56
+4/1/16,East,Jones,Binder,60
+4/18/16,Central,Andrews,Pencil,75
+5/5/16,Central,Jardine,Pencil,90
+5/22/16,West,Thompson,Pencil,32
+
+$ cat excel.csv |awk -F, '{print $1"\t" $3"\t" $5}'
+OrderDate       Rep     Units
+1/6/16  Jones   95
+1/23/16 Kivell  50
+2/9/16  Jardine 36
+2/26/16 Gill    27
+3/15/16 Sorvino 56
+4/1/16  Jones   60
+4/18/16 Andrews 75
+5/5/16  Jardine 90
+```
+# Task 5:
+* Install the zabbix-agent using shell script
+```
+rpm -Uvh http://repo.zabbix.com/zabbix/3.0/rhel/7/x86_64/zabbix-release-3.0-1.el7.noarch.rpm
+    if [ $? -ne 0 ]
+         then
+             echo "Unable to install zabbix agent on server."
+             exit 1
+    else
+        echo "Installing zabbix agent";
+        yum install zabbix-agent -y
+        chkconfig zabbix-agent on
+        cp
+        sed -i 's/Server=127.0.0.1/Server=zabbix.opstree.com/' /etc/zabbix/zabbix_agentd.conf
+        sed -i 's/Hostname=Zabbix/Hostname=192.168.1.57- zabbixagent/' /etc/zabbix/zabbix_agentd.conf
+        if [ `echo $?` == 0 ]
+                then
+                echo "Starting the zabbix agent"
+                service zabbix-agent start
+        fi
+    fi
 ```
