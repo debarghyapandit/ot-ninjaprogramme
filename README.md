@@ -1,2 +1,2 @@
-# ot-ninjaprogramm
+# ot-ninjaprogramme
 Opstree Ninja Training
