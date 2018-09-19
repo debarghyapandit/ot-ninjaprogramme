@@ -55,3 +55,32 @@ Success is traditionally represented with exit 0; failure is normally indicated 
 
 check exit status of command using echo $?
 
+# Task 2:
+* Make a script and pass 5 command line arguments(arguments value should be interger)
+
+    - print 1st and 5th command line arguments
+    -  print "INDIA" if 2nd argument equal to 10 else it will print "india"
+    - print addition of all arguments
+```
+#!/bin/bash
+
+#Make a script and pass 5 command line arguments
+
+USAGE="USAGE: Please provide 5 arguments to run the script, e.g: scritname arg1 agr2 ... arg5"
+
+if [ $# -eq 0 -o $# -lt 5 ]; then
+        echo "$USAGE"
+        exit 1
+else
+        echo -e "First argument=$1 \nFifth argument=$5"
+        if [ $2 -eq 10 ]
+        then
+                echo "INDIA"
+        else
+                echo "india"
+        fi
+# whitespace for expr is important
+        sum=`expr $1 + $2 + $3 + $4 + $5`
+        echo -e "Addition of all 5 args is $sum"
+fi
+```
