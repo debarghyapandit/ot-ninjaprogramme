@@ -128,3 +128,23 @@ elif [ $num -ge 10 ]
         done
 fi
 ```
+
+# Task 4:
+* Make a script and print your name 10 times(use fuction to print your name)
+```
+#!/bin/bash
+
+#Make a script and print your name 10 times(use fuction to print your name)
+
+print_name() {
+
+for i in {1..10}
+do
+        echo "Your Name Is $1 !!"
+done
+}
+
+read -p "Enter your name : " name
+print_name $name
+
+```
