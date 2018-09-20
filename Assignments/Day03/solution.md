@@ -196,9 +196,7 @@ rpm -Uvh http://repo.zabbix.com/zabbix/3.0/rhel/7/x86_64/zabbix-release-3.0-1.el
     fi
 ```
 #  Task 6:
-* Make a script in which you will pass a git repo path and it will generate a html report of last 5 days commits.
-
-    - html report should contain
+* Make a script in which you will pass a git repo path and it will generate a html report of last 5 days commits. html report should contain
     - Commit Message
     - Commit ID
     - Author Name
