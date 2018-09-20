@@ -195,3 +195,68 @@ rpm -Uvh http://repo.zabbix.com/zabbix/3.0/rhel/7/x86_64/zabbix-release-3.0-1.el
         fi
     fi
 ```
+#  Task 6:
+* Make a script in which you will pass a git repo path and it will generate a html report of last 5 days commits.
+
+    - html report should contain
+    - Commit Message
+    - Commit ID
+    - Author Name
+    - Commit Date
+
+```
+#!/bin/bash
+
+# Print html report for last 5 days commit
+reportFile=commitreport.html
+
+#Generate Report
+
+gen_report() {
+>$reportFile
+cat  << 'EOF' > $reportFile
+<html>
+<body>
+<h3 align="center">Git Commit Report [Last 5 days]</h3>
+<table align="center" border="1" cellpadding="1" cellspacing="0" width="900" bgcolor="#BFF8F5">
+ <thead>
+   <tr style="color: #2F3FA5; font-family: Arial, sans-serif; font-size: 14px;" bgcolor="#F5E92E">
+      <th>Commit ID</th>
+      <th>Commit Message</th>
+      <th>Author Name</th>
+      <th>Commit Date</th>
+    </tr>
+ </thead>
+ <tbody>
+EOF
+
+while read line
+do
+        echo "<tr><td>${line//,/</td><td>}</td></tr>" >> $reportFile
+done < /tmp/input.csv
+echo "</tbody></table></body></html>" >> $reportFile
+rm -rf /tmp/input.csv
+}
+
+#fetch data
+fetch_data() {
+read -p "Please provide the abolute path for repo: " repo_path
+#echo $repo_path
+pushd $repo_path
+git log --since=5.days --date=format:'%Y-%m-%d %H:%M:%S' --pretty=format:"%H,%s,%aN,%cd" >/tmp/input.csv
+popd
+}
+
+#main
+echo "===This script will generate the HTML report for last 5 days commit log.=="
+fetch_data
+if [ $? -eq 0 ]
+then
+        gen_report
+else
+        echo "Unable to generate report !!"
+        exit 1
+fi
+```
+* output
+
