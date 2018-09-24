@@ -1,6 +1,6 @@
 # Weekend Summary Saturday
 
-* a. Git
+* Git
 ```
                   What is it?
                   Why we required it?
@@ -22,7 +22,7 @@
                                     git remote add origin git@github.com:username/new_repo
                    Git Branching:
                                     Why we require Branching ?, Need for branching
-                                    Typical Release Process : Dev ENV, QA ENV, UAT/PrePROD ENV, PROD ENV
+                                    Types of ENV : Dev ENV, QA ENV, UAT/PrePROD ENV, PROD ENV
                                     Branching Types: master
                                                      Release
                                                      feature
@@ -37,7 +37,7 @@
 
 # Weekend Summary Sunday
 
-* a. Maven
+* Maven
 ```
             Build Tool:
                               Why we need it?
@@ -57,7 +57,7 @@
                               
 ```
 
-* 1. Explain your understanding what is the difference between Jenkins SCM option or checking out code using git clone command?
+* Explain your understanding what is the difference between Jenkins SCM option or checking out code using git clone command?
 ```
      In git clone command:
             * it's just like normal shell command executed using execute shell option  in Jenkins.
@@ -70,13 +70,13 @@
             * can configure SCM Polling and webhook trigers.
 ```
 
-* 2. Get code as soon as someone commits his/her code in repository
+* Get code as soon as someone commits his/her code in repository
 ```
       solution one -- via scm polling
       solution two -- via webhook triger
 ```
 
-* 3. Create a Jenkins job that will take a Git URL & a branch name as an input and clone the code and print the name of file having maximum size
+* Create a Jenkins job that will take a Git URL & a branch name as an input and clone the code and print the name of file having maximum size
 ```
 ##Approach
 cd $WORKSPACE
@@ -90,7 +90,7 @@ git checkout $Branch
   output : 94K ./EmployeeAutomation/test-output/jquery-1.7.1.min.js
 ```
 
-* 4. Create a Jenkins job that will checkout the code from: https://github.com/OpsTree/ContinuousIntegration, If there is a new change it should invoke other jenkins job that will compile the code. If code compilation is successful next job should get triggered that will generate the artefact. Finally a mail should be sent to you with the name of artefact
+* Create a Jenkins job that will checkout the code from: https://github.com/OpsTree/ContinuousIntegration, If there is a new change it should invoke other jenkins job that will compile the code. If code compilation is successful next job should get triggered that will generate the artefact. Finally a mail should be sent to you with the name of artefact
 ```
 ##Approach
     job 1 -- for git checkout
@@ -102,7 +102,7 @@ Note: all the 3 jobs should have same workspace using external worksapce feature
   # Visualization can be done by using Build pipline plugin of jenkins.
 ```
   
-* 5. Create a jenkins job that will take username & password and a SQl file as an input. Then it should execute that SQL file in the database.
+* Create a jenkins job that will take username & password and a SQl file as an input. Then it should execute that SQL file in the database.
 ```
      - Create a parameterized job that Will accept:
                     username
