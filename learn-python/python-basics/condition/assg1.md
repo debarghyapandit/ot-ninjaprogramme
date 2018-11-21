@@ -15,11 +15,12 @@ In a Python program, the if statement is how we perform this sort of decision-ma
 if <test expr>:
     <statement>
 ```
-Here, the program evaluates the test expression and will execute statement(s) only if the test expression is True.
+Here, the program evaluates the ```test expression``` and will execute ```statement(s)``` only if the test expression is ```True```.
 
-If the test expression is False, the statement(s) is not executed.
+If the test expression is ```False```, the statement(s) is not executed.
 
-Note that the colon (:) following <test expr> is required.
+**Note that the colon (:)** following <test expr> is required.
+
 In Python, the body of the if statement is indicated by the indentation. Body starts with an indentation and the first unindented line marks the end.
 Python interprets non-zero values as True. None and 0 are interpreted as False.
 
@@ -36,17 +37,18 @@ if <expr>:
     ...
     <statement>
 <following_statement>
+
 ```
 
 - Python if Statement Flowchart
-![](media/1.jpg)
+
+	![](media/1.jpg)
 
 
 - Example: Python if Statement
 
 ```
-
-# If the number is positive, we print an appropriate message
+#If the number is positive, we print an appropriate message
 
 num = 3
 if num > 0:
@@ -59,19 +61,21 @@ if num > 0:
 print("This is also always printed.")
 
 ```
+
 outout:
 
 ```
+
 3 is a positive number
 This is always printed
 This is also always printed.
-```
 
+```
 
 # Python if-else Statement
 
 
-Syntax of if-else
+- Syntax of if-else
 
 ```
 if test expression:
@@ -91,7 +95,7 @@ If the condition is False, body of ```else``` is executed. Indentation is used t
 
 - Python if-else Flowchart
 
-![](media/2.png)
+	![](media/2.png)
 
 
 - Example of if-else
@@ -108,7 +112,7 @@ else:
 
 # Python if-elif-else Statement
 
-Syntax of if-elif-else
+- Syntax of if-elif-else
 
 ```
 if test expression:
@@ -132,7 +136,7 @@ The if block can have only one else block. But it can have multiple elif blocks.
 
 - Flowchart of if-elif-else
 
-![](media/3.png)
+	![](media/3.png)
 
 
 - Example of if-elif-else
