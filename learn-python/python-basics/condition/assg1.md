@@ -95,7 +95,7 @@ If the condition is False, body of ```else``` is executed. Indentation is used t
 
 - Python if-else Flowchart
 
-	![](media/2.png)
+	![](media/2.jpg)
 
 
 - Example of if-else
@@ -136,7 +136,7 @@ The if block can have only one else block. But it can have multiple elif blocks.
 
 - Flowchart of if-elif-else
 
-	![](media/3.png)
+	![](media/3.jpg)
 
 
 - Example of if-elif-else
