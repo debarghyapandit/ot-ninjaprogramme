@@ -149,3 +149,60 @@ fruit_list.clear()
 print(fruit_list)
 
 ```
+
+**Python Built in methods for List**
+
+/***
+<table class="tg">
+<tr>
+<th class="tg-yw4l"><b>Method<b></th>
+<th class="tg-yw4l"><b>Description<b></th>
+</tr>
+<tr>
+  <td class="tg-yw4l">append()</td>
+  <td class="tg-yw4l">Adds an element at the end of the list</td>
+</tr>
+<tr>
+  <td class="tg-yw4l">clear()</td>
+  <td class="tg-yw4l">Removes all the elements from the list</td>
+</tr>
+<tr>
+  <td class="tg-yw4l">copy()</td>
+  <td class="tg-yw4l">Returns a copy of the list</td>
+</tr>
+<tr>
+  <td class="tg-yw4l">count()</td>
+  <td class="tg-yw4l">Returns the number of elements with the specified value</td>
+</tr>
+<tr>
+  <td class="tg-yw4l">extend()</td>
+  <td class="tg-yw4l">Add the elements of a list (or any iterable), to the end of the current list
+  </td>
+</tr>
+<tr>
+  <td class="tg-yw4l">index()</td>
+  <td class="tg-yw4l">Returns the index of the first element with the specified value</td>
+</tr>
+<tr>
+  <td class="tg-yw4l">insert()</td>
+  <td class="tg-yw4l">Adds an element at the specified position</td>
+</tr>
+<tr>
+  <td class="tg-yw4l">pop()</td>
+  <td class="tg-yw4l">Removes the element at the specified position</td>
+</tr>
+<tr>
+  <td class="tg-yw4l">remove()</td>
+  <td class="tg-yw4l">Removes the item with the specified value</td>
+</tr>
+<tr>
+  <td class="tg-yw4l">reverse()</td>
+  <td class="tg-yw4l">Reverses the order of the list</td>
+</tr>
+<tr>
+  <td class="tg-yw4l">sort()</td>
+  <td class="tg-yw4l">Sorts the list</td>
+</tr>
+</table>
+
+***/
