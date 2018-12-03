@@ -152,7 +152,6 @@ print(fruit_list)
 
 **Python Built in methods for List**
 
-/***
 <table class="tg">
 <tr>
 <th class="tg-yw4l"><b>Method<b></th>
@@ -204,5 +203,3 @@ print(fruit_list)
   <td class="tg-yw4l">Sorts the list</td>
 </tr>
 </table>
-
-***/
