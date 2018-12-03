@@ -4,12 +4,24 @@ Theory Assignment: Read about Lists and its built-in functions.
 
 **List**
 
-A list is a collection which is ordered and changeable. In Python lists are written with square brackets.
+A list is a collection which is ordered and changeable. In Python lists are written with square brackets, separated by commas.
+It can have any number of items and they may be of different types (integer, float, string etc.).
+
+```python
+# list with string datatypes
+fruit_list = ["apple", "banana", "cherry"]
+print(fruit_list)
+# list with mixed datatypes
+my_list = [1, "Hello", 3.4]
+
+```
+
+A list can even have another list as an item. This is called nested list.
 
 ```python
 
-fruit_list = ["apple", "banana", "cherry"]
-print(fruit_list)
+# nested list
+my_list = ["mouse", [8, 4, 6], ['a']]
 
 ```
 
@@ -21,6 +33,33 @@ List items can be accessed by referring to the index number:
 
 fruit_list = ["apple", "banana", "cherry"]
 print(fruit_list[1])
+
+```
+
+Accessing items in a nexted list
+
+```python
+
+# Nested List
+n_list = ["Happy", [2,0,1,5]]
+
+print(n_list[0][1])    # Output: a
+print(n_list[1][3])    # Output: 5
+
+```
+
+**Negetive Indexing**
+
+Python allows negative indexing for its sequences.
+The index of -1 refers to the last item, -2 to the second last item and so on.
+
+```python
+
+my_list = ['o','p','s','t','e', 'e']
+
+print(my_list[-1])  # Output: e
+
+print(my_list[-5])  ## Output: p
 
 ```
 
