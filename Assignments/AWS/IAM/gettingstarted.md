@@ -6,10 +6,10 @@
 - Access to root account
 - Setting up IAM for the first Time
 
-** Activit**
+**Activit**
 
-Create groups of users
-Set permission for each group
-Generate a password
-Sing in AWS console as an IAM user
+- Create groups of users
+- Set permission for each group
+- Generate a password
+- Sing in AWS console as an IAM user
 
