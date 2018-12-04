@@ -1,0 +1,16 @@
+- Lock Away Your AWS Account Root User Access Keys
+- Create Individual IAM Users
+- Use Groups to Assign Permissions to IAM Users
+- Use AWS Defined Policies to Assign Permissions Whenever Possible
+- Grant Least Privilege
+- Use Access Levels to Review IAM Permissions
+- Configure a Strong Password Policy for Your Users
+- Enable MFA for Privileged Users
+- Use Roles for Applications That Run on Amazon EC2 Instances
+- Use Roles to Delegate Permissions
+- Do Not Share Access Keys
+- Rotate Credentials Regularly
+- Remove Unnecessary Credentials
+- Use Policy Conditions for Extra Security
+- Monitor Activity in Your AWS Account
+[MORE ON IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
